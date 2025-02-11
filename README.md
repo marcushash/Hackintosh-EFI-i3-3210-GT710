@@ -6,6 +6,10 @@
 ---
 
 ## Project Status
+
+### Screenshot 📸  
+<img src="images/monterey-screenshot.jpeg" alt="macOS Monterey Running" width="800"/>
+
 | **macOS Version** | **Status** |
 |------------------|-----------|
 | macOS Monterey (`12.x`) | ✅ Stable |
