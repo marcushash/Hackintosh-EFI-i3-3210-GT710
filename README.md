@@ -33,6 +33,20 @@ This EFI is designed for the following configuration:
 
 ---
 
+### **ACPI Patches & SSDTs**
+The following **SSDTs** are used for proper ACPI patching:  
+
+| **SSDT** | **Purpose** | **Details** |
+|---------|------------|------------|
+| **SSDT-EC** | Emulated Embedded Controller | Required for Ivy Bridge platforms |
+| **SSDT-PM** | CPU Power Management | Generated using [`ssdtPRGen.sh`](https://github.com/Piker-Alpha/ssdtPRGen.sh) *(Post-Install Step)* |
+| **SSDT-IEMI** | Fixes I2C/I2C HID issues | Helps with device communication |
+| **SSDT-SBUS** | Enables SMBus functionality | Improves system stability |
+
+These SSDTs are pre-configured in the `EFI/OC/ACPI` folder.
+
+---
+
 ## Limitations ⚠️
 - ❌ **No Metal Support** – GT 710 is Kepler-based but lacks full Metal acceleration in macOS Monterey.
 - ❌ **No AirDrop & Continuity** – Requires a native macOS-supported Wi-Fi/Bluetooth adapter.
@@ -58,23 +72,7 @@ This EFI is designed for the following configuration:
 
 ---
 
-## Installation Guide 🛠️
-### **BIOS Settings**
-Ensure the following settings are configured in your BIOS:
-- **VT-d** → Disabled  
-- **Secure Boot** → Disabled  
-- **CSM (Legacy Boot Mode)** → Disabled  
-- **Serial Port** → Disabled  
-- **Above 4G Decoding** → Enabled (if available)  
-
-### **Steps to Install**
-1. **Prepare a macOS Monterey USB Installer** using OpenCore.
-2. **Mount the EFI partition** of your USB.
-3. **Copy the EFI folder** from this repository to your USB's EFI partition.
-4. **Boot into OpenCore** and install macOS Monterey.
-5. **Post-Install Tweaks** – Use OpenCore Post-Install (OCLP) for better GPU acceleration.
-
-### **Fixing Realtek USB Wi-Fi Adapters**
+## Fixing Realtek USB Wi-Fi Adapters
 If you are using a **Realtek USB Wi-Fi Adapter**, you need to install a third-party driver **after installing macOS**:
 
 ➡️ **[Download the Realtek USB Wi-Fi Driver](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter)**  
