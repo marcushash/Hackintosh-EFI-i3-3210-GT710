@@ -81,8 +81,8 @@ Follow the installation instructions provided on the GitHub page to enable Wi-Fi
 ---
 
 ### **☕ Support Me on Ko-fi**
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-<script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'J3J612PNM4');kofiwidget2.draw();</script>
+If this EFI helped you, consider **buying me a coffee** to support my work! 🚀  
+[![Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J612PNM4)
 
 ---
 
