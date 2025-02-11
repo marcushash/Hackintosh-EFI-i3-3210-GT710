@@ -25,7 +25,7 @@ This EFI is designed for the following configuration:
 | **Motherboard** | ASUS P8H61-M LX R2.0 |
 | **CPU** | Intel Core i3-3210 (Ivy Bridge) |
 | **GPU** | NVIDIA GeForce GT 710 (Kepler) |
-| **RAM** | 8GB DDR3 1333MHz |
+| **RAM** | 8GB DDR3 1400MHz |
 | **Storage** | SATA SSD/HDD |
 | **Wi-Fi & Bluetooth** | Realtek USB Wi-Fi Adapter *(requires manual driver installation, see below)* |
 | **Audio** | Realtek ALC887 |
