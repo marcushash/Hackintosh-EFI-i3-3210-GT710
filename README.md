@@ -23,7 +23,7 @@ This EFI is designed for the following configuration:
 | **GPU** | NVIDIA GeForce GT 710 (Kepler) |
 | **RAM** | 8GB DDR3 1333MHz |
 | **Storage** | SATA SSD/HDD |
-| **Wi-Fi & Bluetooth** | No built-in support (requires compatible USB adapter) |
+| **Wi-Fi & Bluetooth** | Realtek USB Wi-Fi Adapter *(requires manual driver installation, see below)* |
 | **Audio** | Realtek ALC887 |
 | **SMBIOS** | MacPro6,1 |
 
@@ -43,6 +43,7 @@ This EFI is designed for the following configuration:
 - ✅ **Ethernet (Realtek RTL8111)**
 - ✅ **Sleep/Wake**
 - ✅ **Basic macOS Functionality**
+- ✅ **Wi-Fi (via third-party driver, see below)**
 
 ---
 
@@ -69,6 +70,12 @@ Ensure the following settings are configured in your BIOS:
 4. **Boot into OpenCore** and install macOS Monterey.
 5. **Post-Install Tweaks** – Use OpenCore Post-Install (OCLP) for better GPU acceleration.
 
+### **Fixing Realtek USB Wi-Fi Adapters**
+If you are using a **Realtek USB Wi-Fi Adapter**, you need to install a third-party driver **after installing macOS**:
+
+➡️ **[Download the Realtek USB Wi-Fi Driver](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter)**  
+Follow the installation instructions provided on the GitHub page to enable Wi-Fi functionality.
+
 ---
 
 ### **☕ Support Me on Ko-fi**
@@ -80,6 +87,7 @@ Ensure the following settings are configured in your BIOS:
 ## Credits 🙌
 - [Acidanthera](https://github.com/acidanthera) for OpenCore, Lilu, AppleALC, WhateverGreen.
 - [Dortania’s OpenCore Guide](https://dortania.github.io/OpenCore-Install-Guide/) for documentation.
+- [Chris1111](https://github.com/chris1111/Wireless-USB-Big-Sur-Adapter) for Realtek Wi-Fi drivers.
 - Hackintosh communities for testing and feedback.
 
 ---
